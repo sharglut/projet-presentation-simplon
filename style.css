@@ -138,16 +138,18 @@ header {
 }
 
 .featured-articles {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
 }
 
 .article {
     display: flex;
     flex-direction: column;
+    flex: none;
     box-shadow: 0 0 .5em var(--secondary-background-color);
     border-radius: 10px;
-    width: 50%;
+    min-width: 50%;
+    width: 30rem;
 }
 
 .article-title {
@@ -199,4 +201,12 @@ footer {
 
 .social-list-item:hover {
    background-color: var(--secondary-background-color); 
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1400px) {
+    .featured-articles {
+            grid-template-columns: repeat(2, 1fr);
+        }
 }
