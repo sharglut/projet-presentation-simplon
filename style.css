@@ -20,10 +20,12 @@
     --font-size-md: 2.4rem;
     --font-size-lg: 3rem;
     --font-size-xl: 4rem;
-    --gap: 2rem;
+    --gap-md: 2rem;
+    --gap-lg: 5rem;
     --margin-sm: 2rem;
     --margin-md: 3rem;
     --margin-lg: 5rem;
+    --margin-xl: 10rem;
     --item-min-height-xs: 15rem;
     --item-min-height-sm: 20rem;
     --item-min-height-md: 30rem;
@@ -38,8 +40,8 @@
 }
 
 html {
-    font-size: 62,5%; /* on pourrait aussi .625em */
-    scroll-padding-top: 10rem;
+    font-size: 62.5%; /* on pourrait aussi .625em */
+    scroll-padding-top: 15rem;
 }
 
 body {
@@ -48,7 +50,7 @@ body {
     color: var(--dark-color);
     background-color: var(--primary-background-color);
     letter-spacing: 1px;
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 
 a {
@@ -84,14 +86,14 @@ ul {
 /* Reusable classes */
 
 .container {
-    max-width: 100rem;
+    max-width: 160rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
 .d-grid {
     display: grid;
-    gap: var(--gap);
+    gap: var(--gap-lg);
 }
 
 /* Header */
@@ -111,7 +113,7 @@ header {
 
 .list {
     display: flex;
-    gap: var(--gap);
+    gap: var(--gap-lg);
 }
 
 .list-item:hover,
@@ -124,7 +126,7 @@ header {
 .main-title {
     width: 400px;
     text-align: center;
-    margin: var(--margin-lg) auto;
+    margin: var(--margin-xl) auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 .1em .1em rgba(0, 0, 0, .08);
@@ -132,7 +134,7 @@ header {
 
 .section-title {
     text-decoration: underline;
-    margin: var(--margin-lg) 0 var(--margin-md);
+    margin: var(--margin-xl) 0 var(--margin-lg);
 }
 
 .featured-articles {
@@ -145,7 +147,7 @@ header {
     flex-direction: column;
     box-shadow: 0 0 .5em var(--secondary-background-color);
     border-radius: 10px;
-    width: 75%;
+    width: 50%;
 }
 
 .article-title {
@@ -174,7 +176,7 @@ section i {
 /* Footer */
 
 footer {
-    margin-top: var(--margin-lg);
+    margin-top: var(--margin-xl);
     border-top: solid 1px var(--secondary-background-color);
     box-shadow: 0 0 .5em var(--secondary-background-color);
 }
